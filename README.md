@@ -1,4 +1,4 @@
-**k29awx*wds*** | A personal web design system made by me for myself. Specifically engineered with an indie yet modern aesthetic.
+**k29awx*wds*** | A personal web design system engineered with a modern yet indie aesthetic.
 
 ## Quick Start
 
@@ -41,7 +41,7 @@
 
 </main>
 
-  
+
 
 <aside class="rightbar">
 
@@ -49,7 +49,7 @@
 
 </aside>
 
-  
+
 
 <footer class="footer">
 
@@ -71,7 +71,7 @@ Credits: <a href="https://www.tumblr.com/mini-moss">minimoss</a>
 
 </div>
 
-  
+
 
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 
@@ -103,4 +103,5 @@ crossorigin="anonymous"
 - [ ] Document modules
 
 ## Credits
+
 - /k29awxwds/assets/gif/bg.gif - [https://www.tumblr.com/mini-moss](https://www.tumblr.com/mini-moss)
