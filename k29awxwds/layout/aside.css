@@ -1,0 +1,13 @@
+.rightbar {
+  grid-area: rightbar;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--gap);
+  word-break: break-word;
+}
+.rightbar ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}

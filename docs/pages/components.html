@@ -1,0 +1,737 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>k29awxwds- Documentation</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/duotone/style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/monokai.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <link rel="stylesheet" href="../k29awxwds/k29awxwds.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div id="cursorcontainer">
+      <div id="cursorcircle"></div>
+    </div>
+    <div class="progresscontainer" id="pageloadcontainer">
+      <div class="progressbar" id="pageloadbar"></div>
+    </div>
+
+    <div class="container" id="app">
+      <header class="header">
+        <section class="widget">
+          <h1>
+            <span class="sm"
+              ><i class="ph-duotone ph-arrow-elbow-down-right"></i></span
+            >Components
+          </h1>
+          <p class="lg">
+            <i>Components are basic html and custom made single elements.</i>
+          </p>
+        </section>
+      </header>
+      <nav class="nav">
+        <section class="widget">
+          <p>
+            <a href="#intro"
+              >Native vs Custom Components
+              <span class="xsm"
+                ><i class="ph-duotone ph-link-simple-break"></i></span
+            ></a>
+            :
+            <a href="#img"
+              >Images
+              <span class="xsm"
+                ><i class="ph-duotone ph-link-simple-break"></i></span
+            ></a>
+            :
+            <a href="#ul"
+              >Unordered Lists
+              <span class="xsm"
+                ><i class="ph-duotone ph-link-simple-break"></i></span
+            ></a>
+            :
+            <a href="#a"
+              >Anchor Tags
+              <span class="xsm"
+                ><i class="ph-duotone ph-link-simple-break"></i></span
+            ></a>
+            :
+            <a href="#button"
+              >Buttons
+              <span class="xsm"
+                ><i class="ph-duotone ph-link-simple-break"></i></span
+            ></a>
+            :
+            <a href="#input"
+              >Input Fields
+              <span class="xsm"
+                ><i class="ph-duotone ph-link-simple-break"></i></span
+            ></a>
+            :
+            <a href="#selectoption"
+              >Option Selectors
+              <span class="xsm"
+                ><i class="ph-duotone ph-link-simple-break"></i></span
+            ></a>
+            :
+            <a href="#progressbars"
+              >Progress Bars
+              <span class="xsm"
+                ><i class="ph-duotone ph-link-simple-break"></i></span
+            ></a>
+            :
+            <a href="#typography"
+              >Typography
+              <span class="xsm"
+                ><i class="ph-duotone ph-link-simple-break"></i></span
+            ></a>
+          </p>
+        </section>
+      </nav>
+      <main class="main">
+        <section class="widget" id="intro">
+          <h2>
+            <span class="sm"
+              ><i class="ph-duotone ph-arrow-elbow-down-right"></i></span
+            >Native vs Custom Components
+          </h2>
+          <p>
+            <i
+              >Native components are the default components you run into when
+              using html.</i
+            >
+            <span class="minor"
+              >Eg: button, h1, h2, h3, h4, h5, h6, p, span, label...</span
+            >
+          </p>
+          <br />
+          <p>
+            <i
+              >Custom components are the non-native components that you may
+              encounter when using k29awxwds.</i
+            >
+            <br />
+            <span class="minor">Eg: progressbars</span>
+          </p>
+        </section>
+        <section class="widget" id="img">
+          <h3>
+            <span class="sm"
+              ><i class="ph-duotone ph-arrow-elbow-down-right"></i></span
+            >Images<span class="xsm">Native</span>
+          </h3>
+
+          <pre><code class="language-html">&#x3C;img src=&#x22;image.png&#x22; alt=&#x22;Image&#x22;&#x3E;</code></pre>
+          <ul>
+            <li>Classes: <span class="minor">None</span></li>
+            <li>
+              Tokens: --nativecomponent-media-width |
+              --nativecomponent-media-maxheight
+            </li>
+          </ul>
+          <br />
+          <p class="highlight">Eg:</p>
+          <img src="../k29awxwds/assets/img/image.png" alt="Image" />
+        </section>
+        <section class="widget" id="ul">
+          <h3>
+            <span class="sm"
+              ><i class="ph-duotone ph-arrow-elbow-down-right"></i></span
+            >Unordered Lists<span class="xsm">Native</span>
+          </h3>
+          <pre><code class="language-html">&#x3C;ul&#x3E;
+    &#x3C;li&#x3E;List Item&#x3C;/li&#x3E;
+    &#x3C;li&#x3E;List Item&#x3C;/li&#x3E;
+&#x3C;/ul&#x3E;</code></pre>
+          <ul>
+            <li>Classes: <span class="minor">None</span></li>
+            <li>Tokens: --gap-components</li>
+          </ul>
+          <br />
+          <p class="highlight">Eg:</p>
+          <ul>
+            <li>List Item</li>
+            <li>List Item</li>
+          </ul>
+        </section>
+        <section class="widget" id="a">
+          <h3>
+            <span class="sm"
+              ><i class="ph-duotone ph-arrow-elbow-down-right"></i></span
+            >Anchor Tags<span class="xsm">Native</span>
+          </h3>
+          <p class="minor">Option 01: Open in the same tab:</p>
+          <pre><code class="language-html">&#x3C;a href=&#x22;#&#x22;&#x3E;Link &#x3C;span class=&#x22;xsm&#x22;&#x3E;&#x3C;i class=&#x22;ph-duotone ph-link-simple-break&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/span&#x3E;&#x3C;/a&#x3E;</code></pre>
+          <br />
+          <p class="minor">Option 02: Open in new tab:</p>
+          <pre><code class="language-html">&#x3C;a href=&#x22;#&#x22; target=&#x22;_blank&#x22;&#x3E;Link &#x3C;span class=&#x22;xsm&#x22;&#x3E;&#x3C;i class=&#x22;ph-duotone ph-arrow-square-out&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/span&#x3E;&#x3C;/a&#x3E;</code></pre>
+
+          <ul>
+            <li>Classes: <span class="minor">None</span></li>
+            <li>
+              Tokens: --text-action | --text-action-hover | --text-action-active
+              | --text-disabled
+            </li>
+          </ul>
+          <br />
+          <p class="highlight">Eg:</p>
+          <ul>
+            <li>
+              Default (--text-action):
+              <span
+                ><a href="#"
+                  >Link
+                  <span class="xsm"
+                    ><i class="ph-duotone ph-link-simple-break"></i></span
+                ></a>
+                |
+                <a href="#" target="_blank"
+                  >Link
+                  <span class="xsm"
+                    ><i class="ph-duotone ph-arrow-square-out"></i></span></a
+              ></span>
+            </li>
+            <li>
+              Default Option 01 (Open in the same tab):
+              <a href="#"
+                >Link
+                <span class="xsm"
+                  ><i class="ph-duotone ph-link-simple-break"></i></span
+              ></a>
+            </li>
+            <li>
+              Default Option 02 (Open in new tab):
+              <a href="#" target="_blank"
+                >Link
+                <span class="xsm"
+                  ><i class="ph-duotone ph-arrow-square-out"></i></span
+              ></a>
+            </li>
+            <li>
+              Active State (--text-action-active):
+              <a href="#" class="active"
+                >Link
+                <span class="xsm"
+                  ><i class="ph-duotone ph-link-simple-break"></i></span
+              ></a>
+            </li>
+            <li>
+              Disabled State (--text-action-disabled):
+              <a href="#" class="disabled"
+                >Link
+                <span class="xsm"
+                  ><i class="ph-duotone ph-link-simple-break"></i></span
+              ></a>
+            </li>
+          </ul>
+        </section>
+        <section class="widget" id="button">
+          <h3>
+            <span class="sm"
+              ><i class="ph-duotone ph-arrow-elbow-down-right"></i></span
+            >Buttons<span class="xsm">Native</span>
+          </h3>
+          <p class="minor">Rectangle</p>
+          <pre><code class="language-html">&#x3C;button&#x3E;Button&#x3C;/button&#x3E;</code></pre>
+          <br />
+          <p class="minor">Small Even</p>
+          <pre><code class="language-html">&#x3C;button class=&#x22;btn-sm&#x22;&#x3E;Button&#x3C;/button&#x3E;</code></pre>
+          <br />
+          <p class="minor">Medium Even</p>
+          <pre><code class="language-html">&#x3C;button class=&#x22;btn-md&#x22;&#x3E;Button&#x3C;/button&#x3E;</code></pre>
+          <br />
+          <p class="minor">Large Even</p>
+          <pre><code class="language-html">&#x3C;button class=&#x22;btn-lg&#x22;&#x3E;Button&#x3C;/button&#x3E;</code></pre>
+
+          <ul>
+            <li>
+              Classes:
+              <span class="minor">None</span> or sqr-sm | sqr-md | sqr-lg
+            </li>
+            <li>
+              Tokens: --button-default | --body | --button-text |
+              --border-default | --component-wrap | --button-text-hover |
+              --button-hover | --button-active | --button-text-active |
+              --component-wrap-btn-sm | --component-wrap-btn-md |
+              --component-wrap-btn-lg
+            </li>
+          </ul>
+          <br />
+          <p class="highlight">Eg:</p>
+          <p>Default (Rectangle)</p>
+          <button>Button</button>
+          <button class="active">Active Button</button>
+          <br />
+          <br />
+          <p>Even Small</p>
+          <button class="btn-sm">Button</button>
+          <button class="btn-sm active">Active Button</button>
+          <br />
+          <br />
+          <p>Even Medium</p>
+          <button class="btn-md">Button</button>
+          <button class="btn-md active">Active Button</button>
+          <br />
+          <br />
+          <p>Even Large</p>
+          <button class="btn-lg">Button</button>
+          <button class="btn-lg active">Active Button</button>
+          <br />
+        </section>
+        <section class="widget" id="input">
+          <h3>
+            <span class="sm"
+              ><i class="ph-duotone ph-arrow-elbow-down-right"></i></span
+            >Input Fields<span class="xsm">Native</span>
+          </h3>
+          <pre><code class="language-html">&#x3C;input type=&#x22;text&#x22; name=&#x22;&#x22; id=&#x22;&#x22; placeholder=&#x22;Input Field&#x22; /&#x3E;</code></pre>
+          <br />
+          <ul>
+            <li>
+              Classes:
+              <span class="minor">None</span>
+            </li>
+            <li>
+              Tokens: --interactive-component-action |
+              --interactive-component-text | --border-action | --component-wrap
+              | --body | --interactive-component-text | --border-focus |
+              --interactive-component-action-hover
+            </li>
+          </ul>
+          <br />
+          <p class="highlight">Eg:</p>
+          <input type="text" name="" id="" placeholder="Input Field" />
+        </section>
+        <section class="widget" id="selectoption">
+          <h3>
+            <span class="sm"
+              ><i class="ph-duotone ph-arrow-elbow-down-right"></i></span
+            >Option Selectors<span class="xsm">Native</span>
+          </h3>
+          <pre><code class="language-html">&#x3C;select name=&#x22;&#x22; id=&#x22;&#x22;&#x3E;
+    &#x3C;option value=&#x22;value&#x22;&#x3E;Value&#x3C;/option&#x3E;
+    &#x3C;option value=&#x22;value&#x22;&#x3E;Value&#x3C;/option&#x3E;
+    &#x3C;option value=&#x22;value&#x22;&#x3E;Value&#x3C;/option&#x3E;
+&#x3C;/select&#x3E;</code></pre>
+          <br />
+          <ul>
+            <li>
+              Classes:
+              <span class="minor">None</span>
+            </li>
+            <li>
+              Tokens: --interactive-component-action |
+              --interactive-component-text | --body | --border-action |
+              --component-wrap | --border-focus |
+              --interactive-component-action-hover
+            </li>
+          </ul>
+          <br />
+          <p class="highlight">Eg:</p>
+          <select name="" id="">
+            <option value="value">Value</option>
+            <option value="value">Value</option>
+            <option value="value">Value</option>
+          </select>
+        </section>
+        <section class="widget" id="progressbars">
+          <h3>
+            <span class="sm"
+              ><i class="ph-duotone ph-arrow-elbow-down-right"></i></span
+            >Progress Bars<span class="xsm">Custom</span>
+          </h3>
+          <pre><code class="language-html">&#x3C;div class=&#x22;progresscontainer&#x22;&#x3E;
+  &#x3C;div class=&#x22;progressbar&#x22; style=&#x22;width: 48%&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+          <br />
+          <ul>
+            <li>Classes: .progresscontainer | .progressbar</li>
+            <li>
+              Tokens: --customcomponent-progressbar-height | --surface-action
+            </li>
+          </ul>
+          <br />
+          <p class="highlight">Eg:</p>
+
+          <div class="progresscontainer">
+            <div class="progressbar" style="width: 48%"></div>
+          </div>
+        </section>
+        <section class="widget" id="typography">
+          <h3>
+            <span class="sm"
+              ><i class="ph-duotone ph-arrow-elbow-down-right"></i></span
+            >Typography<span class="xsm">Native</span>
+          </h3>
+
+          <br />
+
+          <hr />
+          <br />
+          <p class="lg">H1</p>
+          <pre><code class="language-html">&#x3C;h1&#x3E;&#x3C;span class=&#x22;sm&#x22;&#x3E;&#x3C;i class=&#x22;ph-duotone ph-arrow-elbow-down-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/span&#x3E;
+H1&#x3C;/h1&#x3E;</code></pre>
+          <br />
+          <ul>
+            <li>Classes: <span class="minor">None</span></li>
+            <li>
+              Tokens: --typescale-h1-fz | --typescale-h1-lh | --headings |
+              --text-headings | --mobiletypescale-h1-fz |
+              --mobiletypescale-h1-lh
+            </li>
+          </ul>
+          <br />
+          <p class="highlight">Eg:</p>
+
+          <h1>
+            <span class="sm"
+              ><i class="ph-duotone ph-arrow-elbow-down-right"></i></span
+            >H1
+          </h1>
+
+          <br />
+
+          <hr />
+          <br />
+          <br />
+          <p class="lg">H2</p>
+          <pre><code class="language-html">&#x3C;h2&#x3E;&#x3C;span class=&#x22;sm&#x22;&#x3E;&#x3C;i class=&#x22;ph-duotone ph-arrow-elbow-down-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/span&#x3E;
+H2&#x3C;/h2&#x3E;</code></pre>
+          <br />
+          <ul>
+            <li>Classes: <span class="minor">None</span></li>
+            <li>
+              Tokens: --typescale-h2-fz | --typescale-h2-lh | --headings |
+              --text-headings | --mobiletypescale-h2-fz |
+              --mobiletypescale-h2-lh
+            </li>
+          </ul>
+          <br />
+          <p class="highlight">Eg:</p>
+
+          <h2>
+            <span class="sm"
+              ><i class="ph-duotone ph-arrow-elbow-down-right"></i></span
+            >H2
+          </h2>
+
+          <br />
+
+          <hr />
+          <br />
+          <br />
+          <p class="lg">H3</p>
+          <pre><code class="language-html">&#x3C;h3&#x3E;&#x3C;span class=&#x22;sm&#x22;&#x3E;&#x3C;i class=&#x22;ph-duotone ph-arrow-elbow-down-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/span&#x3E;
+H3&#x3C;/h3&#x3E;</code></pre>
+          <br />
+          <ul>
+            <li>Classes: <span class="minor">None</span></li>
+            <li>
+              Tokens: --typescale-h3-fz | --typescale-h3-lh | --headings |
+              --text-headings | --mobiletypescale-h3-fz |
+              --mobiletypescale-h3-lh
+            </li>
+          </ul>
+          <br />
+          <p class="highlight">Eg:</p>
+
+          <h3>
+            <span class="sm"
+              ><i class="ph-duotone ph-arrow-elbow-down-right"></i></span
+            >H3
+          </h3>
+
+          <br />
+
+          <hr />
+          <br />
+          <br />
+          <p class="lg">H4</p>
+          <pre><code class="language-html">&#x3C;h4&#x3E;&#x3C;span class=&#x22;sm&#x22;&#x3E;&#x3C;i class=&#x22;ph-duotone ph-arrow-elbow-down-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/span&#x3E;
+H4&#x3C;/h4&#x3E;</code></pre>
+          <br />
+          <ul>
+            <li>Classes: <span class="minor">None</span></li>
+            <li>
+              Tokens: --typescale-h4-fz | --typescale-h4-lh | --headings |
+              --text-headings | --mobiletypescale-h4-fz |
+              --mobiletypescale-h4-lh
+            </li>
+          </ul>
+          <br />
+          <p class="highlight">Eg:</p>
+
+          <h4>
+            <span class="sm"
+              ><i class="ph-duotone ph-arrow-elbow-down-right"></i></span
+            >H4
+          </h4>
+
+          <br />
+
+          <hr />
+          <br />
+          <br />
+          <p class="lg">H5</p>
+          <pre><code class="language-html">&#x3C;h5&#x3E;&#x3C;span class=&#x22;sm&#x22;&#x3E;&#x3C;i class=&#x22;ph-duotone ph-arrow-elbow-down-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/span&#x3E;
+H5&#x3C;/h5&#x3E;</code></pre>
+          <br />
+          <ul>
+            <li>Classes: <span class="minor">None</span></li>
+            <li>
+              Tokens: --typescale-h5-fz | --typescale-h5-lh | --headings |
+              --text-headings | --mobiletypescale-h5-fz |
+              --mobiletypescale-h5-lh
+            </li>
+          </ul>
+          <br />
+          <p class="highlight">Eg:</p>
+
+          <h5>
+            <span class="sm"
+              ><i class="ph-duotone ph-arrow-elbow-down-right"></i></span
+            >H5
+          </h5>
+
+          <br />
+
+          <hr />
+          <br />
+          <br />
+          <p class="lg">H6</p>
+          <pre><code class="language-html">&#x3C;h6&#x3E;&#x3C;span class=&#x22;sm&#x22;&#x3E;&#x3C;i class=&#x22;ph-duotone ph-arrow-elbow-down-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/span&#x3E;
+H6&#x3C;/h6&#x3E;</code></pre>
+          <br />
+          <ul>
+            <li>Classes: .error | .warning | .success</li>
+            <li>
+              Tokens: --typescale-h6-fz | --typescale-h6-lh | --headings |
+              --text-headings | --mobiletypescale-h6-fz |
+              --mobiletypescale-h6-lh
+            </li>
+          </ul>
+          <br />
+          <p class="highlight">Eg:</p>
+
+          <h6>
+            <span class="sm"
+              ><i class="ph-duotone ph-arrow-elbow-down-right"></i></span
+            >H6
+          </h6>
+          <br />
+
+          <hr />
+          <br />
+          <br />
+          <p class="lg">Large Paragraph</p>
+          <p class="minor">Default</p>
+          <pre><code class="language-html">&#x3C;p class=&#x22;lg&#x22;&#x3E;&#x3C;i&#x3E;Default Large Paragraph&#x3C;/i&#x3E;&#x3C;/p&#x3E;</code></pre>
+          <br />
+          <p class="minor">Minor</p>
+          <pre><code class="language-html">&#x3C;p class=&#x22;lg minor&#x22;&#x3E;&#x3C;i&#x3E;Minor Large Paragraph&#x3C;/i&#x3E;&#x3C;/p&#x3E;</code></pre>
+          <br />
+          <p class="minor">Highlight</p>
+          <pre><code class="language-html">&#x3C;p class=&#x22;lg highlight&#x22;&#x3E;&#x3C;i&#x3E;Highlighted Large Paragraph&#x3C;/i&#x3E;&#x3C;/p&#x3E;</code></pre>
+          <br />
+          <p class="minor">Error</p>
+          <pre><code class="language-html">&#x3C;p class=&#x22;lg error&#x22;&#x3E;&#x3C;i&#x3E;Highlighted Large Paragraph&#x3C;/i&#x3E;&#x3C;/p&#x3E;</code></pre>
+          <br />
+
+          <ul>
+            <li>Classes: .lg | .minor | .highlight | .error</li>
+            <li>
+              Tokens: --typescale-p-lg-fz | --typescale-p-lg-lh |
+              --mobiletypescale-p-lg-fz | --mobiletypescale-p-lg-lh |
+              --text-highlight | --text-error
+            </li>
+          </ul>
+          <br />
+          <p class="highlight">Eg:</p>
+          <p class="lg"><i>Default Large Paragraph</i></p>
+          <p class="lg minor"><i>Minor Large Paragraph</i></p>
+          <p class="lg highlight"><i>Highlighted Large Paragraph</i></p>
+          <p class="lg error"><i>Error - Large Paragraph</i></p>
+          <br />
+
+          <hr />
+          <br />
+          <br />
+          <p class="lg">Paragraph</p>
+          <p class="minor">Default</p>
+          <pre><code class="language-html">&#x3C;p&#x3E;Default Paragraph&#x3C;/p&#x3E;</code></pre>
+          <br />
+          <p class="minor">Minor</p>
+          <pre><code class="language-html">&#x3C;p class=&#x22;minor&#x22;&#x3E;Minor Paragraph&#x3C;/p&#x3E;</code></pre>
+          <br />
+          <p class="minor">Highlight</p>
+          <pre><code class="language-html">&#x3C;p class=&#x22;highlight&#x22;&#x3E;Highlighted Paragraph&#x3C;/p&#x3E;</code></pre>
+          <br />
+          <p class="minor">Error</p>
+          <pre><code class="language-html">&#x3C;p class=&#x22;error&#x22;&#x3E;&#x3C;i&#x3E;Error - Paragraph&#x3C;/i&#x3E;&#x3C;/p&#x3E;</code></pre>
+          <br />
+
+          <ul>
+            <li>
+              Classes:
+              <span class="minor">None</span>or .minor | .highlight | .error
+            </li>
+            <li>
+              Tokens: --typescale-p-md-fz | --typescale-p-md-lh |
+              --mobiletypescale-p-md-fz | --mobiletypescale-p-md-lh |
+              --text-highlight | --text-error
+            </li>
+          </ul>
+          <br />
+          <p class="highlight">Eg:</p>
+          <p>Default Paragraph</p>
+          <p class="minor">Minor Paragraph</p>
+          <p class="highlight">Highlighted Paragraph</p>
+          <p class="error">Error - Paragraph</p>
+          <br />
+
+          <hr />
+          <br />
+          <br />
+          <p class="lg">Small Paragraph</p>
+          <p class="minor">Default</p>
+          <pre><code class="language-html">&#x3C;p class=&#x22;sm&#x22;&#x3E;Default Small Paragraph&#x3C;/p&#x3E;</code></pre>
+          <br />
+          <p class="minor">Minor</p>
+          <pre><code class="language-html">&#x3C;p class=&#x22;sm minor&#x22;&#x3E;Minor Small Paragraph&#x3C;/p&#x3E;</code></pre>
+          <br />
+          <p class="minor">Highlight</p>
+          <pre><code class="language-html">&#x3C;p class=&#x22;sm highlight&#x22;&#x3E;Highlighted Small Paragraph&#x3C;/p&#x3E;</code></pre>
+          <br />
+          <p class="minor">Error</p>
+          <pre><code class="language-html">&#x3C;p class=&#x22;sm error&#x22;&#x3E;&#x3C;i&#x3E;Error - Small Paragraph&#x3C;/i&#x3E;&#x3C;/p&#x3E;</code></pre>
+          <br />
+          <ul>
+            <li>Classes: .sm | .minor | .highlight | .error</li>
+            <li>
+              Tokens: --typescale-p-sm-fz | --typescale-p-sm-lh |
+              --mobiletypescale-p-sm-fz | --mobiletypescale-p-sm-lh |
+              --text-highlight | --text-error
+            </li>
+          </ul>
+          <br />
+          <p class="highlight">Eg:</p>
+          <p class="sm">Default Small Paragraph</p>
+          <p class="sm minor">Minor Small Paragraph</p>
+          <p class="sm highlight">Highlighted Small Paragraph</p>
+          <p class="sm error">Error - Small Paragraph</p>
+          <br />
+          <hr />
+          <br />
+          <br />
+          <p class="lg">Extra Small Paragraph</p>
+          <p class="minor">Default</p>
+          <pre><code class="language-html">&#x3C;p class=&#x22;xsm&#x22;&#x3E;Default Extra Small Paragraph&#x3C;/p&#x3E;</code></pre>
+          <br />
+          <p class="minor">Minor</p>
+          <pre><code class="language-html">&#x3C;p class=&#x22;xsm minor&#x22;&#x3E;Minor Extra Small Paragraph&#x3C;/p&#x3E;</code></pre>
+          <br />
+          <p class="minor">Highlight</p>
+          <pre><code class="language-html">&#x3C;p class=&#x22;xsm highlight&#x22;&#x3E;Highlighted Extra Small Paragraph&#x3C;/p&#x3E;</code></pre>
+          <br />
+          <p class="minor">Error</p>
+          <pre><code class="language-html">&#x3C;p class=&#x22;xsm error&#x22;&#x3E;&#x3C;i&#x3E;Error - Extra Small Paragraph&#x3C;/i&#x3E;&#x3C;/p&#x3E;</code></pre>
+          <br />
+          <ul>
+            <li>Classes: .xsm | .minor | .highlight | .error</li>
+            <li>
+              Tokens: --typescale-p-xsm-fz | --typescale-p-xsm-lh |
+              --mobiletypescale-p-xsm-fz | --mobiletypescale-p-xsm-lh |
+              --text-highlight | --text-error
+            </li>
+          </ul>
+          <br />
+          <p class="highlight">Eg:</p>
+          <p class="xsm">Default Extra Small Paragraph</p>
+          <p class="xsm minor">Minor Extra Small Paragraph</p>
+          <p class="xsm highlight">Highlighted Extra Small Paragraph</p>
+          <p class="xsm error">Error - Extra Small Paragraph</p>
+          <br />
+          <hr />
+          <br />
+          <p>
+            Use span tag in any place where you aren't allowed to use the
+            paragraph tag. (It is designed with the same tokens & classes as the
+            paragraph tag.)
+          </p>
+        </section>
+      </main>
+      <aside class="rightbar">
+        <div class="widget">
+          <ul>
+            <a href="../index.html"
+              ><li>
+                Getting Started
+                <span class="xsm"
+                  ><i class="ph-duotone ph-link-simple-break"></i
+                ></span></li
+            ></a>
+            <a href="components.html" class="active"
+              ><li>
+                Components
+                <span class="xsm"
+                  ><i class="ph-duotone ph-link-simple-break"></i
+                ></span></li
+            ></a>
+            <a href="widgets.html"
+              ><li>
+                Widgets
+                <span class="xsm"
+                  ><i class="ph-duotone ph-link-simple-break"></i
+                ></span></li
+            ></a>
+          </ul>
+        </div>
+      </aside>
+
+      <footer class="footer">
+        <div class="widget">
+          <p>
+            Made using
+            <a href="https://github.com/ryxent/k29awxwds" target="_blank"
+              >k29awxwds
+              <span class="xsm"
+                ><i class="ph-duotone ph-arrow-square-out"></i></span
+            ></a>
+            | Credits:
+            <a href="https://www.tumblr.com/mini-moss" target="_blank"
+              >minimoss
+              <span class="xsm"
+                ><i class="ph-duotone ph-arrow-square-out"></i></span></a
+            >,
+            <a href="https://phosphoricons.com/" target="_blank"
+              >Phosphor
+              <span class="xsm"
+                ><i class="ph-duotone ph-arrow-square-out"></i></span
+            ></a>
+            &
+            <a href="https://gsap.com/" target="_blank"
+              >GSAP
+              <span class="xsm"
+                ><i class="ph-duotone ph-arrow-square-out"></i></span
+            ></a>
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+    <script src="../k29awxwds/k29awxwds.js"></script>
+  </body>
+</html>

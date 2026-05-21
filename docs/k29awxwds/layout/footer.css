@@ -1,0 +1,4 @@
+.footer {
+  grid-area: footer;
+  word-break: break-word;
+}

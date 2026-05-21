@@ -1,5 +1,6 @@
 # Ignore .obsidian folder
 .obsidian/
+.vscode/
 
 # Ignore the changelog
 CHANGELOG.md

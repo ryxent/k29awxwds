@@ -1,0 +1,33 @@
+.container {
+  max-width: var(--layout-container);
+  width: 100%;
+  margin: var(--gap) auto;
+  gap: var(--gap);
+  grid-area: container;
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  grid-template-areas:
+    "header  rightbar"
+    "nav  rightbar"
+    "main  rightbar"
+    "footer   rightbar";
+  align-items: start;
+  word-break: break-word;
+}
+.container:not(:has(header)):not(:has(nav)) {
+  grid-template-areas:
+    "main  rightbar"
+    "footer   rightbar";
+}
+.container:not(:has(header)):has(nav) {
+  grid-template-areas:
+    "nav      rightbar"
+    "main  rightbar"
+    "footer   rightbar";
+}
+.container:has(header):not(:has(nav)) {
+  grid-template-areas:
+    "header   rightbar"
+    "main  rightbar"
+    "footer   rightbar";
+}

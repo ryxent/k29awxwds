@@ -1,0 +1,668 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>k29awxwds- Documentation</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/duotone/style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/monokai.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <link rel="stylesheet" href="../k29awxwds/k29awxwds.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div id="cursorcontainer">
+      <div id="cursorcircle"></div>
+    </div>
+    <div class="progresscontainer" id="pageloadcontainer">
+      <div class="progressbar" id="pageloadbar"></div>
+    </div>
+
+    <div class="container" id="app">
+      <header class="header">
+        <section class="widget">
+          <h1>
+            <span class="sm"
+              ><i class="ph-duotone ph-arrow-elbow-down-right"></i></span
+            >Widgets
+          </h1>
+          <p class="lg">
+            <i
+              >Widgets are sections made out of several components or sub
+              widgets.</i
+            >
+          </p>
+        </section>
+      </header>
+      <nav class="nav">
+        <section class="widget">
+          <p>
+            <a href="#intro"
+              >Standard vs Hero Widgets
+              <span class="xsm"
+                ><i class="ph-duotone ph-link-simple-break"></i></span
+            ></a>
+            :
+            <a href="#cards"
+              >Cards
+              <span class="xsm"
+                ><i class="ph-duotone ph-link-simple-break"></i></span
+            ></a>
+            :
+            <a href="#profilebox"
+              >Profile Box
+              <span class="xsm"
+                ><i class="ph-duotone ph-link-simple-break"></i></span
+            ></a>
+            :
+            <a href="#billboard"
+              >Billboard
+              <span class="xsm"
+                ><i class="ph-duotone ph-link-simple-break"></i></span
+            ></a>
+            :
+            <a href="#carousel"
+              >Carousel
+              <span class="xsm"
+                ><i class="ph-duotone ph-link-simple-break"></i></span
+            ></a>
+          </p>
+        </section>
+      </nav>
+      <main class="main">
+        <section class="widget" id="intro">
+          <h2>
+            <span class="sm"
+              ><i class="ph-duotone ph-arrow-elbow-down-right"></i></span
+            >Standard vs Hero Widgets
+          </h2>
+          <p>
+            <i
+              >Standard Widgets are the the widgets that aren't supposed to take
+              100% width of the widget container.</i
+            >
+            <br />
+
+            <span class="minor">Eg: Profile Box, Cards</span>
+            <span class="minor"
+              >When you're creating your custom standard widgets, use the --gap
+              token if you happen to use flexbox or grid within that
+              widget.</span
+            >
+          </p>
+          <br />
+          <p>
+            <i
+              >Hero Widgets are the the widgets that are supposed to take 100%
+              width (and sometimes the entire heigh too.) of the widget
+              container.</i
+            >
+            <br />
+            <span class="minor">Eg: Billboard, Carousel</span>
+            <span class="minor"
+              >If you want to create a new hero widget, be sure to nullify the
+              default padding by adding the following lines to your css
+              file</span
+            >
+          </p>
+          <pre><code class="language-css">.widget:has(&#x3E; .yourwidget) {
+  padding: 0;
+}
+
+.yourwidget {
+  padding: var(--wrap);
+}</code></pre>
+        </section>
+        <section class="widget" id="cards">
+          <h3>
+            <span class="sm"
+              ><i class="ph-duotone ph-arrow-elbow-down-right"></i></span
+            >Cards<span class="xsm">Standard</span>
+          </h3>
+
+          <pre><code class="language-html">&#x3C;section class=&#x22;widget&#x22;&#x3E;
+  &#x3C;div class=&#x22;cards&#x22;&#x3E;
+    &#x3C;div class=&#x22;card&#x22;&#x3E;
+      &#x3C;img src=&#x22;image.png&#x22; alt=&#x22;Image&#x22; /&#x3E;
+      &#x3C;h4&#x3E;
+        &#x3C;span class=&#x22;sm&#x22;
+          &#x3E;&#x3C;i class=&#x22;ph-duotone ph-arrow-elbow-down-right&#x22;&#x3E;&#x3C;/i
+        &#x3E;&#x3C;/span&#x3E;
+        Card 01
+      &#x3C;/h4&#x3E;
+      &#x3C;ul&#x3E;
+        &#x3C;li&#x3E;Card info: ABC&#x3C;/li&#x3E;
+        &#x3C;li&#x3E;Card info: XYZ&#x3C;/li&#x3E;
+      &#x3C;/ul&#x3E;
+      &#x3C;p class=&#x22;highlight&#x22;&#x3E;&#x3C;b&#x3E;Category&#x3C;/b&#x3E;&#x3C;/p&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;card&#x22;&#x3E;
+      &#x3C;img src=&#x22;image.png&#x22; alt=&#x22;Image&#x22; /&#x3E;
+      &#x3C;h4&#x3E;
+        &#x3C;span class=&#x22;sm&#x22;
+          &#x3E;&#x3C;i class=&#x22;ph-duotone ph-arrow-elbow-down-right&#x22;&#x3E;&#x3C;/i
+        &#x3E;&#x3C;/span&#x3E;
+        Card 02
+      &#x3C;/h4&#x3E;
+      &#x3C;ul&#x3E;
+        &#x3C;li&#x3E;Card info: 123&#x3C;/li&#x3E;
+        &#x3C;li&#x3E;Card info: 000&#x3C;/li&#x3E;
+      &#x3C;/ul&#x3E;
+      &#x3C;p class=&#x22;highlight&#x22;&#x3E;&#x3C;b&#x3E;Category&#x3C;/b&#x3E;&#x3C;/p&#x3E;
+    &#x3C;/div&#x3E;
+  &#x3C;/div&#x3E;
+&#x3C;/section&#x3E;</code></pre>
+          <ul>
+            <li>Classes: .widget | .cards | .card</li>
+            <li>Tokens: --wrap | --gap | --surface-default | --split-lg</li>
+          </ul>
+          <br />
+          <p class="highlight">Eg:</p>
+
+          <div class="cards">
+            <div class="card">
+              <img src="../k29awxwds/assets/img/image.png" alt="Image" />
+              <h4>
+                <span class="sm"
+                  ><i class="ph-duotone ph-arrow-elbow-down-right"></i
+                ></span>
+                Card 01
+              </h4>
+              <ul>
+                <li>Card info: ABC</li>
+                <li>Card info: XYZ</li>
+              </ul>
+              <p class="highlight"><b>Category</b></p>
+            </div>
+            <div class="card">
+              <img src="../k29awxwds/assets/img/image.png" alt="Image" />
+              <h4>
+                <span class="sm"
+                  ><i class="ph-duotone ph-arrow-elbow-down-right"></i
+                ></span>
+                Card 02
+              </h4>
+              <ul>
+                <li>Card info: 123</li>
+                <li>Card info: 000</li>
+              </ul>
+              <p class="highlight"><b>Category</b></p>
+            </div>
+          </div>
+        </section>
+        <section class="widget" id="profilebox">
+          <h3>
+            <span class="sm"
+              ><i class="ph-duotone ph-arrow-elbow-down-right"></i></span
+            >Profile Box<span class="xsm">Standard</span>
+          </h3>
+          <pre><code class="language-html">&#x3C;section class=&#x22;widget&#x22;&#x3E;
+  &#x3C;div class=&#x22;profilebox&#x22;&#x3E;
+    &#x3C;div class=&#x22;userbox&#x22;&#x3E;
+      &#x3C;img src=&#x22;image.png&#x22; alt=&#x22;Image&#x22; /&#x3E;
+      &#x3C;h1&#x3E;
+        &#x3C;span class=&#x22;sm&#x22;
+          &#x3E;&#x3C;i class=&#x22;ph-duotone ph-arrow-elbow-down-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/span
+        &#x3E;User
+      &#x3C;/h1&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;profileboxdatablock&#x22;&#x3E;
+      &#x3C;p&#x3E;
+        &#x3C;span class=&#x22;highlight&#x22;&#x3E;Lorem&#x3C;/span&#x3E; | ipsum, dolor sit amet consectetur
+        adipisicing elit. Nesciunt blanditiis amet explicabo inventore.
+      &#x3C;/p&#x3E;
+      &#x3C;a href=&#x22;#&#x22; class=&#x22;profilelink&#x22; target=&#x22;_blank&#x22;
+        &#x3E;Main Link
+        &#x3C;span class=&#x22;xsm&#x22;&#x3E;&#x3C;i class=&#x22;ph-duotone ph-arrow-square-out&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/span
+      &#x3E;&#x3C;/a&#x3E;
+      &#x3C;div class=&#x22;socials&#x22;&#x3E;
+        &#x3C;a href=&#x22;#&#x22; target=&#x22;_blank&#x22;
+          &#x3E;&#x3C;button&#x3E;
+            Link 1
+            &#x3C;span class=&#x22;xsm&#x22;
+              &#x3E;&#x3C;i class=&#x22;ph-duotone ph-arrow-square-out&#x22;&#x3E;&#x3C;/i
+            &#x3E;&#x3C;/span&#x3E;&#x3C;/button&#x3E;&#x3C;/a
+        &#x3E;&#x3C;a href=&#x22;#&#x22; target=&#x22;_blank&#x22;
+          &#x3E;&#x3C;button&#x3E;
+            Link 2
+            &#x3C;span class=&#x22;xsm&#x22;
+              &#x3E;&#x3C;i class=&#x22;ph-duotone ph-arrow-square-out&#x22;&#x3E;&#x3C;/i
+            &#x3E;&#x3C;/span&#x3E;&#x3C;/button&#x3E;&#x3C;/a
+        &#x3E;&#x3C;a href=&#x22;#&#x22; target=&#x22;_blank&#x22;
+          &#x3E;&#x3C;button&#x3E;
+            Link 3
+            &#x3C;span class=&#x22;xsm&#x22;
+              &#x3E;&#x3C;i class=&#x22;ph-duotone ph-arrow-square-out&#x22;&#x3E;&#x3C;/i
+            &#x3E;&#x3C;/span&#x3E;&#x3C;/button&#x3E;&#x3C;/a
+        &#x3E;&#x3C;a href=&#x22;#&#x22; target=&#x22;_blank&#x22;
+          &#x3E;&#x3C;button&#x3E;
+            Link 4
+            &#x3C;span class=&#x22;xsm&#x22;
+              &#x3E;&#x3C;i class=&#x22;ph-duotone ph-arrow-square-out&#x22;&#x3E;&#x3C;/i
+            &#x3E;&#x3C;/span&#x3E;&#x3C;/button
+        &#x3E;&#x3C;/a&#x3E;
+      &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+  &#x3C;/div&#x3E;
+&#x3C;/section&#x3E;</code></pre>
+          <ul>
+            <li>
+              Classes: .widget | .profilebox | .userbox | .profileboxdatablock |
+              .socials
+            </li>
+            <li>Tokens: --wrap | --gap | --gap-components</li>
+          </ul>
+          <br />
+
+          <p class="highlight">Eg:</p>
+          <div class="profilebox">
+            <div class="userbox">
+              <img src="/k29awxwds/assets/img/image.png" alt="Image" />
+              <h1>
+                <span class="sm"
+                  ><i class="ph-duotone ph-arrow-elbow-down-right"></i></span
+                >User
+              </h1>
+            </div>
+            <div class="profileboxdatablock">
+              <p>
+                <span class="highlight">Lorem</span> | ipsum, dolor sit amet
+                consectetur adipisicing elit. Nesciunt blanditiis amet explicabo
+                inventore.
+              </p>
+              <a href="#" class="profilelink" target="_blank"
+                >Main Link
+                <span class="xsm"
+                  ><i class="ph-duotone ph-arrow-square-out"></i></span
+              ></a>
+              <div class="socials">
+                <a href="#" target="_blank"
+                  ><button>
+                    Link 1
+                    <span class="xsm"
+                      ><i class="ph-duotone ph-arrow-square-out"></i
+                    ></span></button></a
+                ><a href="#" target="_blank"
+                  ><button>
+                    Link 2
+                    <span class="xsm"
+                      ><i class="ph-duotone ph-arrow-square-out"></i
+                    ></span></button></a
+                ><a href="#" target="_blank"
+                  ><button>
+                    Link 3
+                    <span class="xsm"
+                      ><i class="ph-duotone ph-arrow-square-out"></i
+                    ></span></button></a
+                ><a href="#" target="_blank"
+                  ><button>
+                    Link 4
+                    <span class="xsm"
+                      ><i class="ph-duotone ph-arrow-square-out"></i
+                    ></span></button
+                ></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="widget" id="billboard">
+          <h3>
+            <span class="sm"
+              ><i class="ph-duotone ph-arrow-elbow-down-right"></i></span
+            >Billboard<span class="xsm">Hero</span>
+          </h3>
+          <pre><code class="language-html">&#x3C;section class=&#x22;widget&#x22;&#x3E;
+  &#x3C;div
+    class=&#x22;billboard&#x22;
+    style=&#x22;
+      background-image:
+        linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.83) 0%,
+          rgba(0, 0, 0, 0.6) 50%,
+          rgba(0, 0, 0, 0.32) 100%
+        ),
+        url(&#x27;image.png&#x27;);
+    &#x22;
+  &#x3E;
+    &#x3C;h2&#x3E;&#x3C;span class=&#x22;sm&#x22;&#x3E;&#x3C;i class=&#x22;ph-duotone ph-arrow-elbow-down-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/span&#x3E;Title&#x3C;/h2&#x3E;
+    &#x3C;p class=&#x22;minor&#x22;&#x3E;~Billboard Description&#x3C;/p&#x3E;
+  &#x3C;/div&#x3E;
+&#x3C;/section&#x3E;</code></pre>
+
+          <ul>
+            <li>Classes: .widget | .billboard</li>
+            <li>Tokens: --wrap</li>
+          </ul>
+          <br />
+          <p class="highlight">Eg:</p>
+        </section>
+        <section class="widget">
+          <div
+            class="billboard"
+            style="
+              background-image:
+                linear-gradient(
+                  0deg,
+                  rgba(0, 0, 0, 0.83) 0%,
+                  rgba(0, 0, 0, 0.6) 50%,
+                  rgba(0, 0, 0, 0.32) 100%
+                ),
+                url(../k29awxwds/assets/img/image.png);
+            "
+          >
+            <h2>
+              <span class="sm"
+                ><i class="ph-duotone ph-arrow-elbow-down-right"></i></span
+              >Title
+            </h2>
+            <p class="minor">~Billboard Description</p>
+          </div>
+        </section>
+        <section class="widget" id="carousel">
+          <h3>
+            <span class="sm"
+              ><i class="ph-duotone ph-arrow-elbow-down-right"></i></span
+            >Carousel<span class="xsm">Hero</span>
+          </h3>
+          <pre><code class="language-html">&#x3C;section class=&#x22;widget&#x22;&#x3E;
+  &#x3C;div class=&#x22;carousel&#x22; id=&#x22;carousel&#x22;&#x3E;
+    &#x3C;div class=&#x22;carouseltrack&#x22; id=&#x22;track&#x22;&#x3E;
+      &#x3C;div
+        class=&#x22;slide&#x22;
+        style=&#x22;
+          background-image:
+            linear-gradient(
+              0deg,
+              rgba(0, 0, 0, 0.83) 0%,
+              rgba(0, 0, 0, 0.6) 50%,
+              rgba(0, 0, 0, 0.32) 100%
+            ),
+            url(image.png);
+        &#x22;
+      &#x3E;
+        &#x3C;h2&#x3E;
+          &#x3C;span class=&#x22;sm&#x22;
+            &#x3E;&#x3C;i class=&#x22;ph-duotone ph-arrow-elbow-down-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/span
+          &#x3E;Slide 1
+        &#x3C;/h2&#x3E;
+      &#x3C;/div&#x3E;
+      &#x3C;div
+        class=&#x22;slide&#x22;
+        style=&#x22;
+          background-image:
+            linear-gradient(
+              0deg,
+              rgba(0, 0, 0, 0.83) 0%,
+              rgba(0, 0, 0, 0.6) 50%,
+              rgba(0, 0, 0, 0.32) 100%
+            ),
+            url(image.png);
+        &#x22;
+      &#x3E;
+        &#x3C;h2&#x3E;
+          &#x3C;span class=&#x22;sm&#x22;
+            &#x3E;&#x3C;i class=&#x22;ph-duotone ph-arrow-elbow-down-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/span
+          &#x3E;Slide 2
+        &#x3C;/h2&#x3E;
+      &#x3C;/div&#x3E;
+      &#x3C;div
+        class=&#x22;slide&#x22;
+        style=&#x22;
+          background-image:
+            linear-gradient(
+              0deg,
+              rgba(0, 0, 0, 0.83) 0%,
+              rgba(0, 0, 0, 0.6) 50%,
+              rgba(0, 0, 0, 0.32) 100%
+            ),
+            url(image.png);
+        &#x22;
+      &#x3E;
+        &#x3C;h2&#x3E;
+          &#x3C;span class=&#x22;sm&#x22;
+            &#x3E;&#x3C;i class=&#x22;ph-duotone ph-arrow-elbow-down-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/span
+          &#x3E;Slide 3
+        &#x3C;/h2&#x3E;
+      &#x3C;/div&#x3E;
+      &#x3C;div
+        class=&#x22;slide&#x22;
+        style=&#x22;
+          background-image:
+            linear-gradient(
+              0deg,
+              rgba(0, 0, 0, 0.83) 0%,
+              rgba(0, 0, 0, 0.6) 50%,
+              rgba(0, 0, 0, 0.32) 100%
+            ),
+            url(image.png);
+        &#x22;
+      &#x3E;
+        &#x3C;h2&#x3E;
+          &#x3C;span class=&#x22;sm&#x22;
+            &#x3E;&#x3C;i class=&#x22;ph-duotone ph-arrow-elbow-down-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/span
+          &#x3E;Slide 4
+        &#x3C;/h2&#x3E;
+      &#x3C;/div&#x3E;
+      &#x3C;div
+        class=&#x22;slide&#x22;
+        style=&#x22;
+          background-image:
+            linear-gradient(
+              0deg,
+              rgba(0, 0, 0, 0.83) 0%,
+              rgba(0, 0, 0, 0.6) 50%,
+              rgba(0, 0, 0, 0.32) 100%
+            ),
+            url(image.png);
+        &#x22;
+      &#x3E;
+        &#x3C;h2&#x3E;
+          &#x3C;span class=&#x22;sm&#x22;
+            &#x3E;&#x3C;i class=&#x22;ph-duotone ph-arrow-elbow-down-right&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/span
+          &#x3E;Slide 5
+        &#x3C;/h2&#x3E;
+      &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+
+    &#x3C;button class=&#x22;carouselctrlbtns btn-lg prev&#x22; id=&#x22;prevBtn&#x22;&#x3E;
+      &#x3C;i class=&#x22;ph-duotone ph-arrow-arc-left&#x22;&#x3E;&#x3C;/i&#x3E;
+    &#x3C;/button&#x3E;
+    &#x3C;button class=&#x22;carouselctrlbtns btn-lg next&#x22; id=&#x22;nextBtn&#x22;&#x3E;
+      &#x3C;i class=&#x22;ph-duotone ph-arrow-arc-right&#x22;&#x3E;&#x3C;/i&#x3E;
+    &#x3C;/button&#x3E;
+  &#x3C;/div&#x3E;
+&#x3C;/section&#x3E;</code></pre>
+
+          <ul>
+            <li>
+              Classes: .widget | .carousel . | .carouseltrack | .slide |
+              .carouselctrlbtns | .btn-lg | .prev
+            </li>
+            <li>Tokens: <span class="minor">None</span></li>
+          </ul>
+          <br />
+          <p class="highlight">Eg:</p>
+        </section>
+        <section class="widget">
+          <div class="carousel" id="carousel">
+            <div class="carouseltrack" id="track">
+              <div
+                class="slide"
+                style="
+                  background-image:
+                    linear-gradient(
+                      0deg,
+                      rgba(0, 0, 0, 0.83) 0%,
+                      rgba(0, 0, 0, 0.6) 50%,
+                      rgba(0, 0, 0, 0.32) 100%
+                    ),
+                    url(&quot;/k29awxwds/assets/img/image.png&quot;);
+                "
+              >
+                <h2>
+                  <span class="sm"
+                    ><i class="ph-duotone ph-arrow-elbow-down-right"></i></span
+                  >Slide 1
+                </h2>
+              </div>
+              <div
+                class="slide"
+                style="
+                  background-image:
+                    linear-gradient(
+                      0deg,
+                      rgba(0, 0, 0, 0.83) 0%,
+                      rgba(0, 0, 0, 0.6) 50%,
+                      rgba(0, 0, 0, 0.32) 100%
+                    ),
+                    url(&quot;/k29awxwds/assets/img/image.png&quot;);
+                "
+              >
+                <h2>
+                  <span class="sm"
+                    ><i class="ph-duotone ph-arrow-elbow-down-right"></i></span
+                  >Slide 2
+                </h2>
+              </div>
+              <div
+                class="slide"
+                style="
+                  background-image:
+                    linear-gradient(
+                      0deg,
+                      rgba(0, 0, 0, 0.83) 0%,
+                      rgba(0, 0, 0, 0.6) 50%,
+                      rgba(0, 0, 0, 0.32) 100%
+                    ),
+                    url(&quot;/k29awxwds/assets/img/image.png&quot;);
+                "
+              >
+                <h2>
+                  <span class="sm"
+                    ><i class="ph-duotone ph-arrow-elbow-down-right"></i></span
+                  >Slide 3
+                </h2>
+              </div>
+              <div
+                class="slide"
+                style="
+                  background-image:
+                    linear-gradient(
+                      0deg,
+                      rgba(0, 0, 0, 0.83) 0%,
+                      rgba(0, 0, 0, 0.6) 50%,
+                      rgba(0, 0, 0, 0.32) 100%
+                    ),
+                    url(&quot;/k29awxwds/assets/img/image.png&quot;);
+                "
+              >
+                <h2>
+                  <span class="sm"
+                    ><i class="ph-duotone ph-arrow-elbow-down-right"></i></span
+                  >Slide 4
+                </h2>
+              </div>
+              <div
+                class="slide"
+                style="
+                  background-image:
+                    linear-gradient(
+                      0deg,
+                      rgba(0, 0, 0, 0.83) 0%,
+                      rgba(0, 0, 0, 0.6) 50%,
+                      rgba(0, 0, 0, 0.32) 100%
+                    ),
+                    url(&quot;/k29awxwds/assets/img/image.png&quot;);
+                "
+              >
+                <h2>
+                  <span class="sm"
+                    ><i class="ph-duotone ph-arrow-elbow-down-right"></i></span
+                  >Slide 5
+                </h2>
+              </div>
+            </div>
+
+            <button class="carouselctrlbtns btn-lg prev" id="prevBtn">
+              <i class="ph-duotone ph-arrow-arc-left"></i>
+            </button>
+            <button class="carouselctrlbtns btn-lg next" id="nextBtn">
+              <i class="ph-duotone ph-arrow-arc-right"></i>
+            </button>
+          </div>
+        </section>
+      </main>
+      <aside class="rightbar">
+        <div class="widget">
+          <ul>
+            <a href="../index.html"
+              ><li>
+                Getting Started
+                <span class="xsm"
+                  ><i class="ph-duotone ph-link-simple-break"></i
+                ></span></li
+            ></a>
+            <a href="components.html"
+              ><li>
+                Components
+                <span class="xsm"
+                  ><i class="ph-duotone ph-link-simple-break"></i
+                ></span></li
+            ></a>
+            <a href="widgets.html" class="active"
+              ><li>
+                Widgets
+                <span class="xsm"
+                  ><i class="ph-duotone ph-link-simple-break"></i
+                ></span></li
+            ></a>
+          </ul>
+        </div>
+      </aside>
+
+      <footer class="footer">
+        <div class="widget">
+          <p>
+            Made using
+            <a href="https://github.com/ryxent/k29awxwds" target="_blank"
+              >k29awxwds
+              <span class="xsm"
+                ><i class="ph-duotone ph-arrow-square-out"></i></span
+            ></a>
+            | Credits:
+            <a href="https://www.tumblr.com/mini-moss" target="_blank"
+              >minimoss
+              <span class="xsm"
+                ><i class="ph-duotone ph-arrow-square-out"></i></span></a
+            >,
+            <a href="https://phosphoricons.com/" target="_blank"
+              >Phosphor
+              <span class="xsm"
+                ><i class="ph-duotone ph-arrow-square-out"></i></span
+            ></a>
+            &
+            <a href="https://gsap.com/" target="_blank"
+              >GSAP
+              <span class="xsm"
+                ><i class="ph-duotone ph-arrow-square-out"></i></span
+            ></a>
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+    <script src="../k29awxwds/k29awxwds.js"></script>
+  </body>
+</html>

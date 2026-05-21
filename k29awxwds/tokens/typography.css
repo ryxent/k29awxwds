@@ -1,0 +1,194 @@
+h1 {
+  margin: 0 8px;
+  font-size: var(--typescale-h1-fz);
+  line-height: var(--typescale-h1-lh);
+  font-family: var(--headings);
+  color: var(--text-headings);
+}
+h2 {
+  margin: 0 8px;
+  font-size: var(--typescale-h2-fz);
+  line-height: var(--typescale-h2-lh);
+  font-family: var(--headings);
+  color: var(--text-headings);
+}
+h3 {
+  margin: 0 8px;
+  font-size: var(--typescale-h3-fz);
+  line-height: var(--typescale-h3-lh);
+  font-family: var(--headings);
+  color: var(--text-headings);
+}
+h4 {
+  margin: 0 8px;
+  font-size: var(--typescale-h4-fz);
+  line-height: var(--typescale-h4-lh);
+  font-family: var(--headings);
+  color: var(--text-headings);
+}
+h5 {
+  margin: 0 8px;
+  font-size: var(--typescale-h5-fz);
+  line-height: var(--typescale-h5-lh);
+  font-family: var(--headings);
+  color: var(--text-headings);
+}
+h6 {
+  margin: 0 8px;
+  font-size: var(--typescale-h6-fz);
+  line-height: var(--typescale-h6-lh);
+  font-family: var(--headings);
+  color: var(--text-headings);
+}
+p.lg,
+span.lg {
+  font-size: var(--typescale-p-lg-fz);
+  line-height: var(--typescale-p-lg-lh);
+}
+p {
+  color: var(--text-body);
+  font-size: var(--typescale-p-md-fz);
+  line-height: var(--typescale-p-md-lh);
+}
+p.sm,
+span.sm {
+  font-size: var(--typescale-p-sm-fz);
+  line-height: var(--typescale-p-sm-lh);
+}
+p.xsm,
+span.xsm {
+  vertical-align: top;
+  font-size: var(--typescale-p-xsm-fz);
+  line-height: var(--typescale-p-xsm-lh);
+}
+
+p.minor,
+span.minor {
+  color: var(--text-body-minor);
+}
+p.error,
+span.error {
+  color: var(--text-error);
+}
+p.highlight,
+span.highlight {
+  color: var(--text-highlight);
+}
+
+span {
+  font-family: var(--headings);
+  font-weight: bold;
+  font-size: var(--typescale-p-md-fz);
+  line-height: var(--typescale-p-md-lh);
+}
+p span,
+h1 span,
+h2 span,
+h3 span,
+h4 span,
+h5 span,
+h6 span,
+a span {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+a span {
+  color: inherit;
+}
+
+label {
+  font-family: var(--headings);
+  font-weight: bold;
+  color: var(--text-body-minor);
+  font-size: var(--typescale-p-md-fz);
+  line-height: var(--typescale-p-md-lh);
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    margin: 0 8px;
+    font-size: var(--mobiletypescale-h1-fz);
+    line-height: var(--mobiletypescale-h1-lh);
+  }
+  h2 {
+    margin: 0 8px;
+    font-size: var(--mobiletypescale-h2-fz);
+    line-height: var(--mobiletypescale-h2-lh);
+  }
+  h3 {
+    margin: 0 8px;
+    font-size: var(--mobiletypescale-h3-fz);
+    line-height: var(--mobiletypescale-h3-lh);
+  }
+  h4 {
+    margin: 0 8px;
+    font-size: var(--mobiletypescale-h4-fz);
+    line-height: var(--mobiletypescale-h4-lh);
+  }
+  h5 {
+    margin: 0 8px;
+    font-size: var(--mobiletypescale-h5-fz);
+    line-height: var(--mobiletypescale-h5-lh);
+  }
+  h6 {
+    margin: 0 8px;
+    font-size: var(--mobiletypescale-h6-fz);
+    line-height: var(--mobiletypescale-h6-lh);
+  }
+  p.lg,
+  span.lg {
+    font-size: var(--mobiletypescale-p-lg-fz);
+    line-height: var(--mobiletypescale-p-lg-lh);
+  }
+  p {
+    color: var(--text-body);
+    font-size: var(--mobiletypescale-p-md-fz);
+    line-height: var(--mobiletypescale-p-md-lh);
+  }
+  p.sm,
+  span.sm {
+    font-size: var(--mobiletypescale-p-sm-fz);
+    line-height: var(--mobiletypescale-p-sm-lh);
+  }
+  p.xsm,
+  span.xsm {
+    vertical-align: top;
+    font-size: var(--mobiletypescale-p-xsm-fz);
+    line-height: var(--mobiletypescale-p-xsm-lh);
+  }
+
+  p.minor {
+    color: var(--text-body-minor);
+  }
+  p.error,
+  span.error {
+    color: var(--text-error);
+  }
+  p.highlight,
+  span.highlight {
+    color: var(--text-highlight);
+  }
+
+  span {
+    color: var(--text-body-minor);
+    font-size: var(--mobiletypescale-p-md-fz);
+    line-height: var(--mobiletypescale-p-md-lh);
+  }
+  p span,
+  h1 span,
+  h2 span,
+  h3 span,
+  h4 span,
+  h5 span,
+  h6 span {
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  label {
+    color: var(--text-body-minor);
+    font-size: var(--mobiletypescale-p-md-fz);
+    line-height: var(--mobiletypescale-p-md-lh);
+  }
+}

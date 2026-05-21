@@ -1,0 +1,27 @@
+:root {
+  --gap: var(--scale-2);
+  --gapmobile: var(--scale-1);
+  --gap-components: var(--scale-1);
+
+  --wrap: var(--scale-2);
+  --component-wrap: var(--scale-2) var(--scale-4);
+  --component-wrap-btn-sm: var(--scale-3);
+  --component-wrap-btn-md: var(--scale-5);
+  --component-wrap-btn-lg: var(--scale-10);
+
+  --split-sm: var(--scale-1);
+  --split-md: var(--scale-2);
+  --split-lg: var(--scale-4);
+
+  --layout-container: 800px;
+  --layoutmobile-screen: 425px;
+  --layouttablet-screen: 768px;
+  --layoutlaptop-screen: 1024px;
+
+  --core-cursorcircle-md: var(--scale-20);
+  --core-cursorcircle-lg: var(--scale-25);
+
+  --nativecomponent-media-width: 100%;
+  --nativecomponent-media-maxheight: var(--scale-50);
+  --customcomponent-progressbar-height: var(--scale-1);
+}

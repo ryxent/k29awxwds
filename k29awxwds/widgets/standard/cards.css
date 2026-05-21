@@ -1,0 +1,30 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--gap);
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: var(--surface-default);
+  padding: var(--wrap);
+  transition: transform 0.2s cubic-bezier(0.25, 1, 0.5, 1);
+  z-index: 1;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  z-index: 10;
+  cursor: pointer;
+}
+
+.card img {
+  display: block;
+}
+
+.card p.highlight {
+  display: block;
+  margin: var(--split-lg) 0 0 0;
+}

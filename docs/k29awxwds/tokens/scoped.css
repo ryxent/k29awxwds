@@ -1,0 +1,69 @@
+:root {
+  --surface-page: var(--neutral-page);
+  --surface-default: var(--primary-500);
+  --surface-action: var(--primary-default);
+  --surface-action-hover: var(--primary-200);
+  --surface-action-active: var(--neutral-white);
+  --surface-disabled: var(--neutral-500);
+  --surface-error: var(--error-500);
+  --surface-success: var(--success-500);
+  --surface-warning: var(--warning-500);
+
+  --text-headings: var(--primary-default);
+  --text-body: var(--neutral-white);
+  --text-body-minor: var(--neutral-225);
+  --text-action: var(--primary-default);
+  --text-action-hover: var(--primary-200);
+  --text-action-active: var(--neutral-white);
+  --text-disabled: var(--neutral-300);
+  --text-error: var(--error-default);
+  --text-success: var(--success-default);
+  --text-warning: var(--warning-default);
+  --text-highlight: var(--primary-default);
+  --text-on-action: var(--neutral-white);
+
+  --icon-default: var(--neutral-500);
+  --icon-action: var(--primary-default);
+  --icon-action-hover: var(--primary-200);
+  --icon-action-active: var(--neutral-white);
+  --icon-disabled: var(--neutral-400);
+  --icon-error: var(--error-default);
+  --icon-success: var(--success-default);
+  --icon-warning: var(--warning-default);
+  --icon-highlight: var(--primary-default);
+  --icon-on-action: var(--neutral-white);
+
+  --border-default: var(--neutral-white);
+  --border-focus: var(--primary-default);
+  --border-action: var(--primary-default);
+  --border-action-hover: var(--primary-200);
+  --border-action-active: var(--neutral-white);
+  --border-disabled: var(--neutral-300);
+  --border-error: var(--error-200);
+  --border-success: var(--success-200);
+  --border-warning: var(--warning-200);
+  --border-highlight: var(--primary-default);
+
+  --button-text: var(--neutral-white);
+  --button-text-hover: var(--primary-300);
+  --button-default: var(none);
+  --button-hover: var(--neutral-white);
+  --button-active: var(--neutral-white);
+  --button-text-active: var(--green-500);
+  --button-disabled: var(--neutral-400);
+  --button-error: var(--error-default);
+  --button-success: var(--success-default);
+  --button-warning: var(--warning-default);
+  --button-highlight: var(--primary-default);
+
+  --interactive-component-text: var(--primary-300);
+  --interactive-component-text-action-hover: var(--primary-300);
+  --interactive-component-action: var(--primary-default);
+  --interactive-component-action-hover: var(--primary-200);
+  --interactive-component-action-active: var(--primary-default);
+  --interactive-component-disabled: var(--neutral-400);
+  --interactive-component-error: var(--error-default);
+  --interactive-component-success: var(--success-default);
+  --interactive-component-warning: var(--warning-default);
+  --interactive-component-highlight: var(--primary-default);
+}

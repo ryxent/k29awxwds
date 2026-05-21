@@ -1,0 +1,14 @@
+.widget:has(> .billboard) {
+  padding: 0;
+}
+
+.billboard {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: var(--wrap);
+}

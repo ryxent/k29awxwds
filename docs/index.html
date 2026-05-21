@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>k29awxwds- Documentation</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/duotone/style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/monokai.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <link rel="stylesheet" href="k29awxwds/k29awxwds.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="cursorcontainer">
+      <div id="cursorcircle"></div>
+    </div>
+    <div class="progresscontainer" id="pageloadcontainer">
+      <div class="progressbar" id="pageloadbar"></div>
+    </div>
+
+    <div class="container" id="app">
+      <header class="header">
+        <section class="widget">
+          <div class="profilebox">
+            <div class="userbox">
+              <img src="/k29awxwds/assets/img/image.png" alt="k29awxwds" />
+              <h1>
+                <span class="sm"
+                  ><i class="ph-duotone ph-arrow-elbow-down-right"></i></span
+                >k29awxwds
+              </h1>
+            </div>
+            <div class="profileboxdatablock">
+              <p>
+                <span class="highlight">k29awxwds</span> | A personal web design
+                system engineered with a modern yet indie aesthetic.
+              </p>
+              <a
+                href="https://github.com/ryxent/k29awxwds"
+                class="profilelink"
+                target="_blank"
+                >Repository
+                <span class="xsm"
+                  ><i class="ph-duotone ph-arrow-square-out"></i></span
+              ></a>
+              <!-- <div class="socials">
+                <a href="#" target="_blank"
+                  ><button>
+                    Link 1
+                    <span class="xsm"
+                      ><i class="ph-duotone ph-arrow-square-out"></i
+                    ></span></button></a
+                ><a href="#" target="_blank"
+                  ><button>
+                    Link 2
+                    <span class="xsm"
+                      ><i class="ph-duotone ph-arrow-square-out"></i
+                    ></span></button></a
+                ><a href="#" target="_blank"
+                  ><button>
+                    Link 3
+                    <span class="xsm"
+                      ><i class="ph-duotone ph-arrow-square-out"></i
+                    ></span></button></a
+                ><a href="#" target="_blank"
+                  ><button>
+                    Link 4
+                    <span class="xsm"
+                      ><i class="ph-duotone ph-arrow-square-out"></i
+                    ></span></button
+                ></a>
+              </div> -->
+            </div>
+          </div>
+        </section>
+      </header>
+      <nav class="nav">
+        <section class="widget">
+          <p>
+            <a href="#setup"
+              >Getting Started
+              <span class="xsm"
+                ><i class="ph-duotone ph-link-simple-break"></i></span
+            ></a>
+            :
+            <a href="#quick"
+              >Quick Start Template
+              <span class="xsm"
+                ><i class="ph-duotone ph-link-simple-break"></i></span
+            ></a>
+            :
+            <a href="#layout"
+              >Basic Layout
+              <span class="xsm"
+                ><i class="ph-duotone ph-link-simple-break"></i></span
+            ></a>
+            :
+            <a href="#footer"
+              >Footer
+              <span class="xsm"
+                ><i class="ph-duotone ph-link-simple-break"></i></span
+            ></a>
+            :
+            <a href="#pageloader"
+              >Page loader
+              <span class="xsm"
+                ><i class="ph-duotone ph-link-simple-break"></i></span
+            ></a>
+            :
+            <a href="#cursor"
+              >Cursor Circle
+              <span class="xsm"
+                ><i class="ph-duotone ph-link-simple-break"></i></span
+            ></a>
+          </p>
+        </section>
+      </nav>
+      <main class="main">
+        <section class="widget" id="setup">
+          <h2>
+            <span class="sm"
+              ><i class="ph-duotone ph-arrow-elbow-down-right"></i></span
+            >Getting Started
+          </h2>
+          <p>
+            <i
+              >Add these required third-party dependencies and the core
+              <strong>k29awxwds</strong> files to your project.</i
+            >
+            <br />
+            <br />
+          </p>
+          <p class="minor">In your <code>&lt;head&gt;</code> tag:</p>
+          <pre><code class="language-html">&#x3C;link rel=&#x22;stylesheet&#x22; type=&#x22;text/css&#x22; href=&#x22;https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/duotone/style.css&#x22;/&#x3E;
+&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;k29awxwds/k29awxwds.css&#x22;/&#x3E;</code></pre>
+          <br />
+          <p class="minor">
+            At the very end of your <code>&lt;body&gt;</code> tag:
+          </p>
+          <pre><code class="language-html">&#x3C;script src=&#x22;https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;k29awxwds/k29awxwds.js&#x22;&#x3E;&#x3C;/script&#x3E;</code></pre>
+        </section>
+        <section class="widget" id="quick">
+          <h3>
+            <span class="sm"
+              ><i class="ph-duotone ph-arrow-elbow-down-right"></i></span
+            >Quick Start Template
+          </h3>
+          <p>
+            <i
+              >Use this as a foundation to jump straight into building with the
+              layout requirements already handled.</i
+            >
+          </p>
+          <pre><code class="language-html">&#x3C;!doctype html&#x3E;
+&#x3C;html lang=&#x22;en&#x22;&#x3E;
+  &#x3C;head&#x3E;
+    &#x3C;meta charset=&#x22;UTF-8&#x22; /&#x3E;
+    &#x3C;meta name=&#x22;viewport&#x22; content=&#x22;width=device-width, initial-scale=1.0&#x22; /&#x3E;
+    &#x3C;title&#x3E;k29awxwds&#x3C;/title&#x3E;
+    &#x3C;link
+      rel=&#x22;stylesheet&#x22;
+      type=&#x22;text/css&#x22;
+      href=&#x22;https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/duotone/style.css&#x22;
+    /&#x3E;
+    &#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;k29awxwds/k29awxwds.css&#x22; /&#x3E;
+  &#x3C;/head&#x3E;
+  &#x3C;body&#x3E;
+    &#x3C;div class=&#x22;progresscontainer&#x22; id=&#x22;pageloadcontainer&#x22;&#x3E;
+      &#x3C;div class=&#x22;progressbar&#x22; id=&#x22;pageloadbar&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div id=&#x22;cursorcontainer&#x22;&#x3E;
+      &#x3C;div id=&#x22;cursorcircle&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+
+    &#x3C;div class=&#x22;container&#x22; id=&#x22;app&#x22;&#x3E;
+      &#x3C;header class=&#x22;header&#x22;&#x3E;&#x3C;div class=&#x22;widget&#x22;&#x3E;&#x3C;/div&#x3E;&#x3C;/header&#x3E;
+      &#x3C;nav class=&#x22;nav&#x22;&#x3E;&#x3C;div class=&#x22;widget&#x22;&#x3E;&#x3C;/div&#x3E;&#x3C;/nav&#x3E;
+      &#x3C;main class=&#x22;main&#x22;&#x3E;&#x3C;div class=&#x22;widget&#x22;&#x3E;&#x3C;/div&#x3E;&#x3C;/main&#x3E;
+      &#x3C;aside class=&#x22;rightbar&#x22;&#x3E;&#x3C;div class=&#x22;widget&#x22;&#x3E;&#x3C;/div&#x3E;&#x3C;/aside&#x3E;
+
+      &#x3C;footer class=&#x22;footer&#x22;&#x3E;
+        &#x3C;div class=&#x22;widget&#x22;&#x3E;
+          &#x3C;p&#x3E;
+            Made using
+            &#x3C;a href=&#x22;https://github.com/ryxent/k29awxwds&#x22; target=&#x22;_blank&#x22;
+              &#x3E;k29awxwds
+              &#x3C;span class=&#x22;xsm&#x22;
+                &#x3E;&#x3C;i class=&#x22;ph-duotone ph-arrow-square-out&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/span
+            &#x3E;&#x3C;/a&#x3E;
+            | Credits:
+            &#x3C;a href=&#x22;https://www.tumblr.com/mini-moss&#x22; target=&#x22;_blank&#x22;
+              &#x3E;minimoss
+              &#x3C;span class=&#x22;xsm&#x22;
+                &#x3E;&#x3C;i class=&#x22;ph-duotone ph-arrow-square-out&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/span&#x3E;&#x3C;/a
+            &#x3E;,
+            &#x3C;a href=&#x22;https://phosphoricons.com/&#x22; target=&#x22;_blank&#x22;
+              &#x3E;Phosphor
+              &#x3C;span class=&#x22;xsm&#x22;
+                &#x3E;&#x3C;i class=&#x22;ph-duotone ph-arrow-square-out&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/span
+            &#x3E;&#x3C;/a&#x3E;
+            &#x26;
+            &#x3C;a href=&#x22;https://gsap.com/&#x22; target=&#x22;_blank&#x22;
+              &#x3E;GSAP
+              &#x3C;span class=&#x22;xsm&#x22;
+                &#x3E;&#x3C;i class=&#x22;ph-duotone ph-arrow-square-out&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/span
+            &#x3E;&#x3C;/a&#x3E;
+          &#x3C;/p&#x3E;
+        &#x3C;/div&#x3E;
+      &#x3C;/footer&#x3E;
+    &#x3C;/div&#x3E;
+
+    &#x3C;script src=&#x22;https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+    &#x3C;script src=&#x22;https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+    &#x3C;script src=&#x22;k29awxwds/k29awxwds.js&#x22;&#x3E;&#x3C;/script&#x3E;
+  &#x3C;/body&#x3E;
+&#x3C;/html&#x3E;
+</code></pre>
+        </section>
+
+        <section class="widget" id="layout">
+          <h3>
+            <span class="sm"
+              ><i class="ph-duotone ph-arrow-elbow-down-right"></i></span
+            >Baisc Layout
+          </h3>
+          <p>
+            <i>
+              The layout uses the css grid. While you are free to get rif of the
+              nav.nav or header.header zones, removing main.main, aside.rightbar
+              or footer.footer blocks will break the rendering entirely.
+            </i>
+          </p>
+          <br />
+          <table>
+            <thead>
+              <tr>
+                <th><span class="sm">Semantic</span></th>
+                <th><span class="sm">Class Name (Required*)</span></th>
+                <th><span class="sm">Optional?</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>header</td>
+                <td>.header</td>
+                <td>yes</td>
+              </tr>
+              <tr>
+                <td>nav</td>
+                <td>.nav</td>
+                <td>yes</td>
+              </tr>
+              <tr>
+                <td>main</td>
+                <td>.main</td>
+                <td>no (Required*)</td>
+              </tr>
+              <tr>
+                <td>aside</td>
+                <td>.rightbar</td>
+                <td>no (Required*)</td>
+              </tr>
+              <tr>
+                <td>footer</td>
+                <td>.footer</td>
+                <td>no (Required*)</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section class="widget" id="footer">
+          <h3>
+            <span class="sm"
+              ><i class="ph-duotone ph-arrow-elbow-down-right"></i></span
+            >Footer & Credits
+          </h3>
+          <p>
+            <i>
+              While the footer credits are recommended to keep, you can remove
+              them but doing so requires you to change the default layout
+              background asset.
+            </i>
+          </p>
+          <br />
+          <p class="minor">
+            If you must remove them, be sure to swap the background gif.
+            <span class="highlight">(/k29awxwds/assets/gif/bg.gif)</span>
+          </p>
+        </section>
+        <section class="widget" id="pageloader">
+          <h3>
+            <span class="sm"
+              ><i class="ph-duotone ph-arrow-elbow-down-right"></i></span
+            >Page loader
+          </h3>
+          <p>
+            <i>
+              Add this code block directly inside the body tag, before your
+              layout container to activate the page loading progress bar.
+            </i>
+          </p>
+          <pre><code class="language-html">&#x3C;div class=&#x22;progresscontainer&#x22; id=&#x22;pageloadcontainer&#x22;&#x3E;
+  &#x3C;div class=&#x22;progressbar&#x22; id=&#x22;pageloadbar&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+          <br />
+          <!-- <p class="lg">
+            <strong>Details:</strong>
+          </p>
+          <ul>
+            <li>
+              <p class="minor">The bar is made using the <a href="#">Progress Bar</a> component.</p>
+            </li>
+          </ul> -->
+        </section>
+        <section class="widget" id="cursor">
+          <h3>
+            <span class="sm"
+              ><i class="ph-duotone ph-arrow-elbow-down-right"></i></span
+            >Cursor Circle
+          </h3>
+          <p>
+            <i>
+              Place this in the same area as the pageloader progressbar to
+              activate the 80px circle that follows the user's cursor.
+            </i>
+          </p>
+          <pre><code class="language-html">&#x3C;div id=&#x22;cursorcontainer&#x22;&#x3E;
+  &#x3C;div id=&#x22;cursorcircle&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+          <br />
+          <p class="lg">
+            <strong>Behavior Details:</strong>
+          </p>
+          <ul>
+            <li>
+              <p>
+                Maintains a strict 150px gap buffer from the edges of the
+                document.
+              </p>
+            </li>
+            <li>
+              <p>
+                Scales up by <strong>1.4x</strong> automatically when hovering
+                over interactive elements (like links or buttons).
+              </p>
+            </li>
+          </ul>
+          <p class="lg">
+            <strong>Behavior Details:</strong>
+          </p>
+          <ul>
+            <li>
+              <p>Tokens: --core-cursorcircle-md | --core-cursorcircle-md</p>
+            </li>
+          </ul>
+        </section>
+      </main>
+      <aside class="rightbar">
+        <div class="widget">
+          <ul>
+            <a href="index.html" class="active"
+              ><li>
+                Getting Started
+                <span class="xsm"
+                  ><i class="ph-duotone ph-link-simple-break"></i
+                ></span></li
+            ></a>
+            <a href="pages/components.html"
+              ><li>
+                Components
+                <span class="xsm"
+                  ><i class="ph-duotone ph-link-simple-break"></i
+                ></span></li
+            ></a>
+            <a href="pages/widgets.html"
+              ><li>
+                Widgets
+                <span class="xsm"
+                  ><i class="ph-duotone ph-link-simple-break"></i
+                ></span></li
+            ></a>
+          </ul>
+        </div>
+      </aside>
+
+      <footer class="footer">
+        <div class="widget">
+          <p>
+            Made using
+            <a href="https://github.com/ryxent/k29awxwds" target="_blank"
+              >k29awxwds
+              <span class="xsm"
+                ><i class="ph-duotone ph-arrow-square-out"></i></span
+            ></a>
+            | Credits:
+            <a href="https://www.tumblr.com/mini-moss" target="_blank"
+              >minimoss
+              <span class="xsm"
+                ><i class="ph-duotone ph-arrow-square-out"></i></span></a
+            >,
+            <a href="https://phosphoricons.com/" target="_blank"
+              >Phosphor
+              <span class="xsm"
+                ><i class="ph-duotone ph-arrow-square-out"></i></span
+            ></a>
+            &
+            <a href="https://gsap.com/" target="_blank"
+              >GSAP
+              <span class="xsm"
+                ><i class="ph-duotone ph-arrow-square-out"></i></span
+            ></a>
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+    <script src="k29awxwds/k29awxwds.js"></script>
+  </body>
+</html>

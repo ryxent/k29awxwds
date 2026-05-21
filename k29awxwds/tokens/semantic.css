@@ -1,0 +1,35 @@
+:root {
+  --primary-default: var(--green-default);
+  --primary-200: var(--green-200);
+  --primary-300: var(--green-300);
+  --primary-400: var(--green-400);
+  --primary-500: var(--green-500);
+
+  --neutral-default: var(--grey-default);
+  --neutral-200: var(--grey-200);
+  --neutral-225: var(--grey-225);
+  --neutral-300: var(--grey-300);
+  --neutral-400: var(--grey-400);
+  --neutral-500: var(--grey-500);
+  --neutral-white: var(--foundation-white);
+  --neutral-black: var(--foundation-black);
+  --neutral-page: var(--foundation-page);
+
+  --error-default: var(--red-default);
+  --error-200: var(--red-200);
+  --error-300: var(--red-300);
+  --error-400: var(--red-400);
+  --error-500: var(--red-500);
+
+  --success-default: var(--blue-default);
+  --success-200: var(--blue-200);
+  --success-300: var(--blue-300);
+  --success-400: var(--blue-400);
+  --success-500: var(--blue-500);
+
+  --warning-default: var(--orange-default);
+  --warning-200: var(--orange-200);
+  --warning-300: var(--orange-300);
+  --warning-400: var(--orange-400);
+  --warning-500: var(--orange-500);
+}

@@ -1,0 +1,7 @@
+.header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--gap);
+  word-break: break-word;
+}

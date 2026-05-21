@@ -1,0 +1,40 @@
+.widget:has(> .carousel) {
+  padding: 0;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  aspect-ratio: 16 / 9;
+}
+
+.carouseltrack {
+  aspect-ratio: 16 / 9;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 100%;
+  transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.slide {
+  place-items: center;
+  align-content: center;
+  display: grid;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carouselctrlbtns {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.carouselctrlbtns.prev {
+  left: 20px;
+}
+.carouselctrlbtns.next {
+  right: 20px;
+}

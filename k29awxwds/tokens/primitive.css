@@ -1,0 +1,95 @@
+:root {
+  --foundation-white: #fff;
+  --foundation-black: #000;
+  --foundation-page: #14151b;
+
+  --green-default: #9ac754;
+  --green-200: #8fcc3f;
+  --green-300: #064b15;
+  --green-400: #0f4202;
+  --green-500: #030d05;
+
+  --grey-default: #c9c9c9;
+  --grey-200: #bfbfbf;
+  --grey-225: #adadad;
+  --grey-300: #4c4c4c;
+  --grey-400: #444544;
+  --grey-500: #171717;
+
+  --red-default: #c75454;
+  --red-200: #cc3f3f;
+  --red-300: #4a0614;
+  --red-400: #420202;
+  --red-500: #0d0304;
+
+  --blue-default: #5b54c7;
+  --blue-200: #523fcc;
+  --blue-300: #061d4a;
+  --blue-400: #040242;
+  --blue-500: #04030d;
+
+  --orange-default: #c76d54;
+  --orange-200: #cc4d3f;
+  --orange-300: #4a1706;
+  --orange-400: #421202;
+  --orange-500: #0d0403;
+
+  --headings: "Italiana", sans-serif;
+  --body: "Philosopher", sans-serif;
+
+  --typescale-h1-fz: 60px;
+  --typescale-h1-lh: 72px;
+  --typescale-h2-fz: 48px;
+  --typescale-h2-lh: 56px;
+  --typescale-h3-fz: 40px;
+  --typescale-h3-lh: 48px;
+  --typescale-h4-fz: 32px;
+  --typescale-h4-lh: 40px;
+  --typescale-h5-fz: 24px;
+  --typescale-h5-lh: 28px;
+  --typescale-h6-fz: 20px;
+  --typescale-h6-lh: 24px;
+
+  --typescale-p-lg-fz: 20px;
+  --typescale-p-lg-lh: 24px;
+  --typescale-p-md-fz: 16px;
+  --typescale-p-md-lh: 20px;
+  --typescale-p-sm-fz: 14px;
+  --typescale-p-sm-lh: 16px;
+  --typescale-p-xsm-fz: 12px;
+  --typescale-p-xsm-lh: 16px;
+
+  --mobiletypescale-h1-fz: 48px;
+  --mobiletypescale-h1-lh: 56px;
+  --mobiletypescale-h2-fz: 40px;
+  --mobiletypescale-h2-lh: 48px;
+  --mobiletypescale-h3-fz: 32px;
+  --mobiletypescale-h3-lh: 40px;
+  --mobiletypescale-h4-fz: 28px;
+  --mobiletypescale-h4-lh: 32px;
+  --mobiletypescale-h5-fz: 24px;
+  --mobiletypescale-h5-lh: 28px;
+  --mobiletypescale-h6-fz: 20px;
+  --mobiletypescale-h6-lh: 24px;
+
+  --mobiletypescale-p-lg-fz: 20px;
+  --mobiletypescale-p-lg-lh: 24px;
+  --mobiletypescale-p-md-fz: 16px;
+  --mobiletypescale-p-md-lh: 20px;
+  --mobiletypescale-p-sm-fz: 14px;
+  --mobiletypescale-p-sm-lh: 16px;
+  --mobiletypescale-p-xsm-fz: 12px;
+  --mobiletypescale-p-xsm-lh: 16px;
+
+  --scalebase: 4px;
+  --scale-1: calc(var(--scalebase) * 1);
+  --scale-2: calc(var(--scalebase) * 2);
+  --scale-3: calc(var(--scalebase) * 3);
+  --scale-4: calc(var(--scalebase) * 4);
+  --scale-5: calc(var(--scalebase) * 5);
+  --scale-6: calc(var(--scalebase) * 6);
+  --scale-10: calc(var(--scalebase) * 10);
+  --scale-20: calc(var(--scalebase) * 20);
+  --scale-25: calc(var(--scalebase) * 25);
+  --scale-50: calc(var(--scalebase) * 50);
+}

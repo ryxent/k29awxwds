@@ -1,0 +1,47 @@
+@media screen and (max-width: 768px) {
+  .container {
+    margin: var(--gapmobile) 0;
+    padding: 0 var(--gapmobile);
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "nav"
+      "rightbar"
+      "main"
+      "footer";
+    gap: var(--gapmobile);
+  }
+  .container:not(:has(header)):not(:has(nav)) {
+    grid-template-areas:
+      "rightbar"
+      "main"
+      "footer";
+  }
+  .container:not(:has(header)):has(nav) {
+    grid-template-areas:
+      "nav"
+      "rightbar"
+      "main"
+      "footer";
+  }
+  .container:has(header):not(:has(nav)) {
+    grid-template-areas:
+      "header"
+      "rightbar"
+      "main"
+      "footer";
+  }
+  .main {
+    gap: var(--gapmobile);
+  }
+  .rightbar {
+    gap: var(--gapmobile);
+  }
+  #cursorcontainer {
+    display: none;
+  }
+  .profilebox {
+    display: block;
+    text-align: center;
+  }
+}
