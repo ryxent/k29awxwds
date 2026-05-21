@@ -70,7 +70,7 @@
 
 ## Documentation
 
-- [Read](ryxent.github.io/k29awxwds/docs)
+- [Read](ryxent.github.io/k29awxwds/)
 
 ## Credits
 
