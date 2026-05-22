@@ -1,27 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Italiana&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-@import url("/k29awxwds/tokens/primitive.css");
-@import url("/k29awxwds/tokens/semantic.css");
-@import url("/k29awxwds/tokens/scoped.css");
-@import url("/k29awxwds/tokens/spacing.css");
-@import url("/k29awxwds/tokens/typography.css");
+@import url("../k29awxwds/tokens/primitive.css");
+@import url("../k29awxwds/tokens/semantic.css");
+@import url("../k29awxwds/tokens/scoped.css");
+@import url("../k29awxwds/tokens/spacing.css");
+@import url("../k29awxwds/tokens/typography.css");
 
-@import url("/k29awxwds/layout/container.css");
-@import url("/k29awxwds/layout/mobile.css");
-@import url("/k29awxwds/layout/header.css");
-@import url("/k29awxwds/layout/nav.css");
-@import url("/k29awxwds/layout/main.css");
-@import url("/k29awxwds/layout/aside.css");
-@import url("/k29awxwds/layout/footer.css");
+@import url("../k29awxwds/layout/container.css");
+@import url("../k29awxwds/layout/mobile.css");
+@import url("../k29awxwds/layout/header.css");
+@import url("../k29awxwds/layout/nav.css");
+@import url("../k29awxwds/layout/main.css");
+@import url("../k29awxwds/layout/aside.css");
+@import url("../k29awxwds/layout/footer.css");
 
-@import url("/k29awxwds/core/widget.css");
-@import url("/k29awxwds/core/cursorcircle.css");
-@import url("/k29awxwds/core/pageload.css");
+@import url("../k29awxwds/core/widget.css");
+@import url("../k29awxwds/core/cursorcircle.css");
+@import url("../k29awxwds/core/pageload.css");
 
-@import url("/k29awxwds/widgets/standard/cards.css");
-@import url("/k29awxwds/widgets/standard/profilebox.css");
+@import url("../k29awxwds/widgets/standard/cards.css");
+@import url("../k29awxwds/widgets/standard/profilebox.css");
 
-@import url("/k29awxwds/widgets/hero/carousel.css");
-@import url("/k29awxwds/widgets/hero/billboard.css");
+@import url("../k29awxwds/widgets/hero/carousel.css");
+@import url("../k29awxwds/widgets/hero/billboard.css");
 
 *,
 *::before,
@@ -42,7 +42,7 @@ body {
       rgba(255, 255, 255, 0) 70%,
       rgb(0, 0, 0) 100%
     ),
-    url("/k29awxwds/assets/gif/bg.gif");
+    url("../k29awxwds/assets/gif/bg.gif");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
